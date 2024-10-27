@@ -5,15 +5,18 @@ import MyLink from "./components/MyLink";
 export default function Home() {
   return (
     <div className="mainDiv">
-      <h1>WELCOME</h1>
+      <h1>Hello. I am Nitin Seelan.</h1>
       <div className="row">
         <div className="column">
-          <h2>column</h2>
-          <p>lorem ipsum</p>
+          <h2>Coding</h2>
+          <p>Swift</p>
+          <p>Python</p>
+          <p>HTML/JavaScript/CSS</p>
+
         </div>
         <div className="column">
           <h2>About</h2>
-          <p>lorem ipsum</p>
+          <p>I code.</p>
         </div>
         <div className="column">
           <h2>My Other Sites and Channels</h2>
@@ -24,14 +27,13 @@ export default function Home() {
         <div className="row">
         <div className="column">
           <h2>Nitin Seelan Tech</h2>
-          <iframe width="420" height="315"src="https://youtu.be/wUsXJ6bRtGc?autoplay=1&mute=1"></iframe>
         </div>
         <div className="column">
-          <h2>About</h2>
+          <h2>Templates</h2>
           <p>lorem ipsum</p>
         </div>
         <div className="column">
-          <h2>My Other Sites and Channels</h2>
+          <h2>Tools</h2>
           <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech"/>
           <br/>
           <MyLink link="https://www.youtube.com/@nitinseelan" text="Nitin Seelan"/>
