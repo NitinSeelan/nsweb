@@ -14,6 +14,11 @@ a{
   width: 100%;
   text-align: center;
 }
+.mainDiv2{
+width: 100%;
+text-align: center;
+
+}
 
 .linkDiv{
   margin:auto;
@@ -77,5 +82,36 @@ cursor: pointer;
 }
 
 h1{
-  text-align: auto;
+  text-align: center;
 }
+
+.btn1{
+  height: 200px;
+  width: 60%;
+  border-radius: 20px;
+  border: 0px;
+  background-color: tomato;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  font-family: 'Lucida Console', Lucida, monospace;
+
+}
+
+.btn1:hover {
+  background-color: rgb(247, 127, 105);
+  cursor: pointer;
+}
+
+.ecdiv {
+  text-align: center;
+}
+
+p{
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
