@@ -19,7 +19,7 @@ export default function Home() {
           <h2>My Other Sites and Channels</h2>
           <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech"/>
           <br/>
-          <MyLink link="https://nitinseelan.com" text="Nitin Seelan Website"/>
+          <MyLink link="https://www.youtube.com/@nitinseelan" text="Nitin Seelan"/>
         </div>
       </div>
       <f1>Copyright Nitin Seelan 2024</f1>
