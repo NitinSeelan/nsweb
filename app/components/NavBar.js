@@ -2,9 +2,9 @@
 const NavBar = () => {
     return(
         <div className = "topnav">
-            <a href="/">🏠</a>
-           <a href="/about">EC Post</a>
-           <a href="/secondpage">Posts</a>
+            <a href="/"> <img src="favicon.ico" alt="" height = "25px" width = "25px" /></a>
+           <a href="/posts">Posts</a>
+           {/*<a href="/about">EC Post</a>*/}
         </div>
     );
 }

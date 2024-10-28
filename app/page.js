@@ -9,10 +9,9 @@ export default function Home() {
       <div className="row">
         <div className="column">
           <h2>Coding</h2>
-          <p>Swift</p>
-          <p>Python</p>
-          <p>HTML/JavaScript/CSS</p>
-
+          <MyLink link="https://www.youtube.com/@nitinseelan" text="Swift"/>
+          <MyLink link="https://www.youtube.com/@nitinseelan" text="Python"/>
+          <MyLink link="https://nitinseelan.w3spaces.com/index.html" text="HTML/JavaScript/CSS"/>
         </div>
         <div className="column">
           <h2>About</h2>
@@ -20,13 +19,15 @@ export default function Home() {
         </div>
         <div className="column">
           <h2>My Other Sites and Channels</h2>
-          <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech"/>
           <br/>
           <MyLink link="https://www.youtube.com/@nitinseelan" text="Nitin Seelan"/>
         </div>
         <div className="row">
         <div className="column">
           <h2>Nitin Seelan Tech</h2>
+          <MyLink link="https://www.youtube.com/@nitinseelantech" text="Latest Video"/>
+          <br/>
+          <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech"/>
         </div>
         <div className="column">
           <h2>Templates</h2>

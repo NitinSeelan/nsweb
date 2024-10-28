@@ -7,7 +7,7 @@ export default function Home() {
     <br/>
     <h3>Posts</h3>
     <br/>
-    <a href = "/about"><button className="btn1"><h1 classname = "EC">Why the Electoral College Should be Removed</h1></button></a>
+    <a href = "/about"><button className="btn1"><h1>Why the Electoral College Should be Removed</h1></button></a>
     <br/>
     <button className="btn1"></button>
     <br/>
