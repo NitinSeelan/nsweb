@@ -107,10 +107,6 @@ h1{
   cursor: pointer;
 }
 
-.ecdiv {
-  text-align: center;
-}
-
 p{
   margin-left: 40px;
   margin-right: 40px;
@@ -118,5 +114,16 @@ p{
 }
 h2{
   text-align: center;
+
+}
+
+
+.ech1{
+  text-align: center;
+}
+
+.ech2{
+  text-align: center;
+
 }
 

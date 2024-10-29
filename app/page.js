@@ -34,10 +34,10 @@ export default function Home() {
           <p>lorem ipsum</p>
         </div>
         <div className="column">
-          <h2>Tools</h2>
-          <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech"/>
+          <h2>Other Accounts</h2>
+          <MyLink link="https://replit.com/@nitin26" text="Replit"/>
           <br/>
-          <MyLink link="https://www.youtube.com/@nitinseelan" text="Nitin Seelan"/>
+          <MyLink link="nitins.seelan@gmail.com" text="Email"/>
         </div>
       </div>
       <f1>Copyright Nitin Seelan 2024</f1>
