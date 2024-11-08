@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./globals.css";
 import MyLink from "./components/MyLink"; 
-
 export default function Home() {
   return (
     <div className="mainDiv">
@@ -9,9 +8,11 @@ export default function Home() {
       <div className="row">
         <div className="column">
           <h2>Coding</h2>
-          <MyLink link="https://www.youtube.com/@nitinseelan" text="Swift"/>
-          <MyLink link="https://www.youtube.com/@nitinseelan" text="Python"/>
-          <MyLink link="https://nitinseelan.w3spaces.com/index.html" text="HTML/JavaScript/CSS"/>
+          <div className="btn34">
+          <MyLink link="/python" imgsrc={"/pylogo.svg"}/>
+          <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc={"/jslogo.png"}/>
+          <MyLink link="https://nitinseelan.w3spaces.com/index.html" imgsrc={"/Swift.webp"}/>
+          </div>
         </div>
         <div className="column">
           <h2>About</h2>
@@ -37,7 +38,7 @@ export default function Home() {
           <h2>Other Accounts</h2>
           <MyLink link="https://replit.com/@nitin26" text="Replit"/>
           <br/>
-          <MyLink link="nitins.seelan@gmail.com" text="Email"/>
+          <MyLink link= "mailto:nitins.seelan@gmail.com" text="Email"/>
         </div>
       </div>
       <f1>Copyright Nitin Seelan 2024</f1>
