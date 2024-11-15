@@ -1,9 +1,18 @@
 import Image from "next/image";
 import styles from "./globals.css";
-import MyLink from "./components/MyLink"; 
+import MyLink from "./components/MyLink";
+ 
 export default function Home() {
   return (
     <div className="mainDiv">
+      <>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+  />
+</>
+
       <h1>Hello. I am Nitin Seelan.</h1>
       <div className="row">
         <div className="column">
@@ -21,7 +30,10 @@ export default function Home() {
         <div className="column">
           <h2>My Other Sites and Channels</h2>
           <br/>
-          <MyLink link="https://www.youtube.com/@nitinseelan" text="Nitin Seelan"/>
+          <div className="btn34">
+          <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc="2.png"/>
+          <MyLink link="https://www.youtube.com/@nitinseelantech" imgsrc="1.png"/>
+</div>
         </div>
         <div className="row">
         <div className="column">
@@ -31,8 +43,10 @@ export default function Home() {
           <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech"/>
         </div>
         <div className="column">
-          <h2>Templates</h2>
-          <p>lorem ipsum</p>
+          <h2>History</h2>
+          <MyLink link="/worldhistory" text="World History"/>
+          <br/>
+          <MyLink link="/ushistory" text="U.S. History"/>
         </div>
         <div className="column">
           <h2>Other Accounts</h2>

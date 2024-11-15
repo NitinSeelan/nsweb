@@ -7,6 +7,7 @@ const NavBar = () => {
            <a href="/python">Python</a>
            {/*<a href="/about">EC Post</a>*/}
            <a href="/login">Login</a>
+           <a href="/counter">Counter</a>
         </div>
     );
 }

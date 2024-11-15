@@ -1,7 +1,9 @@
+
 body {
   margin: 0px;
-  font-family: 'Lucida Console', Lucida, monospace;
-  background-color: rgb(39,158,206);
+  background-color: rgb(89, 207, 254);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 h3{
@@ -143,4 +145,110 @@ border-radius: 10px;
 border: 0px;
 margin-left: 50px;
 margin-right: 50px;
+}
+
+.btn56 {
+  background-color: tomato;
+  border: 0px;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.in1 {
+  background-color: rgba(255, 99, 71, 0.933);
+  border: 0px;
+  width: 240px;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.xdiv {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 300px;
+  margin-left: 400px;
+  margin-right: 400px;
+  border: 0px solid green;
+  height: 200px;
+  background-color: rgb(242, 85, 28);
+  border-radius: 15px;
+}
+
+.xd {
+  width: 400px;
+  background-color: antiquewhite;
+}
+
+
+
+.topnav2{
+  background-color: tomato;
+  margin-top: 130px;
+  margin-right: 10px;
+  margin-left:10px;
+  border-radius: 5px;
+}
+.pw{
+  border: 0px;
+  background-color: rgb(236, 57, 26);
+  width: 50px;
+  height: 30px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+
+
+}
+.pw:hover{
+  background-color: rgb(253, 148, 129);
+  width: 60px;
+  height: 30px;
+}
+
+.canvas {
+  background-color: white;
+  height: 600px;
+  width: 1100px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.canvas:hover {
+  cursor: crosshair;
+}
+
+table {
+  border: 1px;
+}
+
+.bx{
+  text-align: center;
+font-size: xx-large;
+
+}
+
+.cbtn{
+  background-color: tomato;
+  border: 0px;
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  font-size: xx-large;
+  margin-top: 10px;
+}
+
+.numdiv {
+  text-align: center;
+  margin: auto;
+  overflow:hidden;
+  white-space:inherit;
+
 }
