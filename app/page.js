@@ -37,8 +37,8 @@ export default function Home() {
         </div>
         <div className="row">
         <div className="column">
-          <h2>Nitin Seelan Tech</h2>
-          <MyLink link="https://www.youtube.com/@nitinseelantech" text="Latest Video"/>
+          <h2>Tools</h2>
+          <MyLink link="/counter" imgsrc={"/Co.png"}/>
           <br/>
           <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech"/>
         </div>

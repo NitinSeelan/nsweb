@@ -15,14 +15,31 @@ export default function Home() {
     setCount(count - 1);
   };
 
+  const handleTimes = () => {
+    setCount(count * 2);
+  };
+  const handleDivide = () => {
+    setCount(count/2);
+  };
+  const handlesqrt = () => {
+    setCount(Math.sqrt(count));
+  };
+
+  const handleReset =() => {
+    setCount(0);
+  };
   return (
     <div className="bx">
+          <div className="numdiv"id="number">{count}</div>
+          {/* Button to decrease the count */}
        {/* Button to increase the count */}
-      <button className="cbtn" id="add" onClick={handleAdd}>+</button>
+      <button className="cbtn" id="add" onClick={handleAdd}>➕</button>
       {/* Display the current count */}
-    <div className="numdiv"id="number">{count}</div>
-      {/* Button to decrease the count */}
-      <button className="cbtn" id="minus" onClick={handleMinus}>-</button>
+      <button className="cbtn" id="minus" onClick={handleMinus}>➖</button>
+      <button className="cbtn" id="times" onClick={handleTimes}>✖️</button>
+      <button className="cbtn" id="divide" onClick={handleDivide}>➗</button>
+      <button className="cbtn" id="sqrt" onClick={handlesqrt}>√</button>
+      <button className="cbtn" id="Reset" onClick={handleReset}>🔄</button>
     </div>
   );
 }

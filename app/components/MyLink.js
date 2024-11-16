@@ -1,6 +1,6 @@
 'use client'
 
-const MyLink = ({link, text, imgsrc}) => {
+const MyLink = ({link, text, imgsrc, imgsrc2}) => {
     const handleClick = () => {
         // this should send us to {link}
         window.open(link, "_blank")
@@ -10,6 +10,13 @@ const MyLink = ({link, text, imgsrc}) => {
         return (
             <button onClick={handleClick} className="linkDiv">
                 <img src={imgsrc} width = "50px" />
+            </button>
+        )
+    }
+    if(imgsrc2){
+        return (
+            <button onClick={handleClick} className="linkDiv">
+                <img src={imgsrc2} width = "450px" />
             </button>
         )
     }

@@ -243,6 +243,13 @@ font-size: xx-large;
   width: 100px;
   font-size: xx-large;
   margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+color: #f2f2f2;
+font-size: x-large;}
+
+.cbtn:hover {
+  cursor: pointer;
 }
 
 .numdiv {
@@ -250,5 +257,32 @@ font-size: xx-large;
   margin: auto;
   overflow:hidden;
   white-space:inherit;
+margin-top: 10px;
+}
 
+.uhdiv {
+  text-align: center;
+}
+.column2 {
+  margin-top: 100px;
+  float: left;
+  width: 80%;
+  background-color: rgb(253, 148, 129);
+  border-radius: 20px;
+  height: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ text-align: center;
+ height: 550px;
+}
+
+.apph2 {
+
+}
+
+
+.startimg {
+  margin-left: -10px;
 }
