@@ -1,13 +1,13 @@
 
 body {
   margin: 0px;
-  background-color: rgb(89, 207, 254);
+  background-color: rgb(0, 0, 0);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+color: #f2f2f2;
 }
 
 h3{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 a{
   text-decoration: none;
@@ -38,15 +38,18 @@ cursor: pointer;
 
 .topnav{
   overflow: hidden;
-  background-color: tomato;
-  margin-top: 15px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 10px;
   margin-right: 10px;
   margin-left:10px;
   border-radius: 10px;
   text-align: center;
-
-
+  margin:  30px;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  border: 2px solid white;
 }
+
 
 .topnav a {
  float: left;
@@ -59,23 +62,25 @@ cursor: pointer;
 }
 
 .topnav a:hover {
-  background-color: rgb(247, 127, 105);
+  background-color: rgb(110, 110, 110);
   color:rgb(255, 255, 255);
   border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 30%;
-  background-color: rgb(253, 148, 129);
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
   height: 200px;
-  margin-left: 1.66%;
-  margin-right: 1.66%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- 
+ color: #f2f2f2;
+ border: solid white;
 }
 
 .row {
@@ -90,6 +95,7 @@ cursor: pointer;
 
 h1{
   text-align: center;
+  color: #f2f2f2;
 }
 
 .btn1{
@@ -280,4 +286,43 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 .startimg {
   margin-left: -10px;
+}
+
+.air {
+  border: 1px;
+  border-color: black;
+}
+
+table, th, td {
+margin-top: 10px;
+ border: 1px solid black;
+ background: tomato;
+ margin-right: 10px;
+ margin-left: 10px;
+ border-spacing: 0px;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ border-radius: 5px;
+
+}
+
+
+.container{
+  display: inline-block;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width:0;
+  animation: typing;
+  animation-duration: 2s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }

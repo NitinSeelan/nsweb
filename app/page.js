@@ -2,11 +2,15 @@ import Image from "next/image";
 import styles from "./globals.css";
 import MyLink from "./components/MyLink";
  
+
+
 export default function Home() {
   return (
     <div className="mainDiv">
-
-      <h1>Hello. I am Nitin Seelan.</h1>
+         <title>Nitin Seelan | Home</title>
+<div class="container">
+  <h1 class="typed">Hello. I am Nitin Seelan</h1>
+</div>
       <div className="row">
         <div className="column">
           <h2>Coding</h2>
