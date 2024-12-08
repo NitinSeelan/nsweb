@@ -1,59 +1,63 @@
 import Image from "next/image";
 import styles from "./globals.css";
 import MyLink from "./components/MyLink";
- 
-
 
 export default function Home() {
   return (
     <div className="mainDiv">
-         <title>Nitin Seelan | Home</title>
-<div class="container">
-  <h1 class="typed">Hello. I am Nitin Seelan</h1>
-</div>
-      <div className="row">
-        <div className="column">
-          <h2>Coding</h2>
-          <div className="btn34">
-          <MyLink link="/python" imgsrc={"/pylogo.svg"}/>
-          <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc={"/jslogo.png"}/>
-          <MyLink link="https://nitinseelan.w3spaces.com/index.html" imgsrc={"/Swift.webp"}/>
-          </div>
-        </div>
-        <div className="column">
-          <h2>About</h2>
-          <p>I code.</p>
-        </div>
-        <div className="column">
-          <h2>My Other Sites and Channels</h2>
+      <title>Nitin Seelan | Home</title>
+
+      <div className="section">
+        <h1 className="typed">Hello. I am Nitin Seelan</h1>
+      </div>
+
+
+      <div className="column">
+        <h2>About</h2>
+        <p>I code.</p>
+      </div>
+      <div className="column2">
+        <h2>Coding</h2>
+        <div className="btn34">
+          <MyLink link="/python" imgsrc2={"/pylogo.svg"} />
+          <MyLink link="https://nitinseelan.w3spaces.com/index.html" imgsrc2={"/Swift.webp"} />
+          <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc2={"/jslogo.png"} />
           <br/>
-          <div className="btn34">
-          <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc="2.png"/>
-          <MyLink link="https://www.youtube.com/@nitinseelantech" imgsrc="1.png"/>
-</div>
-        </div>
-        <div className="row">
-        <div className="column">
-          <h2>Tools</h2>
-          <MyLink link="/counter" imgsrc={"/Co.png"}/>
-          <br/>
-          <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech"/>
-        </div>
-        <div className="column">
-          <h2>History</h2>
-          <MyLink link="/worldhistory" text="World History"/>
-          <br/>
-          <MyLink link="/ushistory" text="U.S. History"/>
-        </div>
-        <div className="column">
-          <h2>Other Accounts</h2>
-          <MyLink link="https://replit.com/@nitin26" text="Replit"/>
-          <br/>
-          <MyLink link= "mailto:nitins.seelan@gmail.com" text="Email"/>
+          <iframe className="pjt1" src="https://replit.com/@nitin26/Hard-Quiz?embed=true" width="600" height="400"></iframe>
+
         </div>
       </div>
-      <f1>Copyright Nitin Seelan 2024</f1>
+
+      <div className="column3">
+        <h2>My Other Sites and Channels</h2>
+        <div className="btn34">
+          <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc2="2.png" />
+          <MyLink link="https://www.youtube.com/@nitinseelantech" imgsrc2="1.png" />
+          <MyLink link="https://www.youtube.com/@NitinSeelanBonus" imgsrc2="4.png" />
+        </div>
+      </div>
+
+      <div className="column4">
+        <h2>Tools</h2>
+        <MyLink link="/counter" imgsrc2={"/Co.png"} />
+        <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech" />
+      </div>
+
+      <div className="column5">
+        <div className="btn77">
+        <MyLink link="/airplanes" imgsrc3={"/a380.png"} />
+        </div>
+      </div>
+
+      <div className="column6">
+        <h2>Other Accounts</h2>
+        <MyLink link="https://replit.com/@nitin26" text="Replit" />
+        <MyLink link="mailto:nitins.seelan@gmail.com" text="Email" />
+      </div>
+
+      <footer>
+        <h4>Copyright Nitin Seelan 2024</h4>
+      </footer>
     </div>
-    </div>
-    );
+  );
 }

@@ -9,7 +9,6 @@ export default function Home() {
             <h1>Projects</h1>
 
             <iframe className="pjt1" src="https://replit.com/@nitin26/Guess-the-Song?embed=true" width="600" height="400"></iframe>
-            <iframe className="pjt1" src="https://replit.com/@nitin26/Hard-Quiz?embed=true" width="600" height="400"></iframe>
 
 
 </div>

@@ -7,8 +7,8 @@ export default function Home() {
     <div className="mainDiv4">
       <h1>Commercial Aviation</h1>
       <h2>Introduction</h2>
-      <p> You have probably flown on a plane before. It probably also was a Boeing or Airbus. Keep reading on to read a comparison about the aircraft and which one takes the win for each category. Boeing was founded in 1916 in the United States as Pacific Aero Products Company. The following year, it was renamed to Boeing. This text will focus on the 7x7 Series, which started in 1958. Another company from France, Airbus, came along in 1974. In this text, we also will be focusing on the A-Series Planes. They soon became the two biggest competitors in the commercial Aircraft industry.</p>
-
+      <p> The Supersonic Concorde was a jet that could fly at Mach 2 or about two times the speed of sound. The four main companies that make aircraft, Boeing, founded in 1916 in Seattle, Washington; Douglas, founded in 1921 in Santa Monica, California; McDonnell, founded in 1939 in St. Louis, Missouri; and Airbus, founded in 1974 in Blagnac, France. Today, only Boeing and Airbus remain as major players because of mergers. To understand how the jet airplanes advanced, we have to look at the 1950s when the jet age began to take off.
+      </p>
     
 
     </div>
