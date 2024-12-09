@@ -1,8 +1,12 @@
+'use client';
+
 import Image from "next/image";
 import styles from "./globals.css";
 import MyLink from "./components/MyLink";
+import { useEffect } from "react";
 
 export default function Home() {
+
   return (
     <div className="mainDiv">
       <title>Nitin Seelan | Home</title>
@@ -11,20 +15,28 @@ export default function Home() {
         <h1 className="typed">Hello. I am Nitin Seelan</h1>
       </div>
 
-
       <div className="column">
         <h2>About</h2>
         <p>I code.</p>
-      </div>
+        </div>
+
       <div className="column2">
         <h2>Coding</h2>
+      
         <div className="btn34">
           <MyLink link="/python" imgsrc2={"/pylogo.svg"} />
-          <MyLink link="https://nitinseelan.w3spaces.com/index.html" imgsrc2={"/Swift.webp"} />
+          <MyLink
+            link="https://nitinseelan.w3spaces.com/index.html"
+            imgsrc2={"/Swift.webp"}
+          />
           <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc2={"/jslogo.png"} />
-          <br/>
-          <iframe className="pjt1" src="https://replit.com/@nitin26/Hard-Quiz?embed=true" width="600" height="400"></iframe>
-
+          <br />
+          <iframe
+            className="pjt1"
+            src="https://replit.com/@nitin26/Hard-Quiz?embed=true"
+            width="600"
+            height="400"
+          ></iframe>
         </div>
       </div>
 
@@ -45,7 +57,7 @@ export default function Home() {
 
       <div className="column5">
         <div className="btn77">
-        <MyLink link="/airplanes" imgsrc3={"/a380.png"} />
+          <MyLink link="/airplanes" imgsrc3={"/a380.png"} />
         </div>
       </div>
 
