@@ -1,7 +1,13 @@
 //  "use client";
 
 // import { useRef, useState } from "react";
-
+export default function Home(){
+    return (
+        <h1>
+            Hello
+        </h1>
+    );
+}
 // export default function Home() {
 //   // Ref to the video element
 //   const videoRef = useRef(null);
