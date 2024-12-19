@@ -1,3 +1,4 @@
+'use client';
 import { notFound } from 'next/navigation';
 
 // Example function to fetch lesson data (you can replace this with an actual API or database query)
