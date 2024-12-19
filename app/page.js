@@ -15,9 +15,11 @@ export default function Home() {
         <h1 className="typed">Hello. I am Nitin Seelan</h1>
       </div>
 
-      <div className="column">
+      <div className="column" >
         <h2>About</h2>
         <p>I code.</p>
+        <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc2={"/nsfull.webp"} />
+
         </div>
 
       <div className="column2">
@@ -26,7 +28,7 @@ export default function Home() {
         <div className="btn34">
           <MyLink link="/python" imgsrc2={"/pylogo.svg"} />
           <MyLink
-            link="https://nitinseelan.w3spaces.com/index.html"
+            link="/swift"
             imgsrc2={"/Swift.webp"}
           />
           <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc2={"/jslogo.png"} />

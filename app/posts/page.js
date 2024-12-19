@@ -29,20 +29,6 @@ export default function Home() {
         <MyLink className = "btnec "link="/ecpost" text="Read More"/>
 
       </div>
-      <div className="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div className="fakeimg" style={{ height: 200 }}>
-          Image
-        </div>
-        <p>Some text..</p>
-        <p>
-          Sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco.
-        </p>
-      </div>
     </div>
     <div className="rightcolumn">
       <div className="card">
@@ -50,7 +36,7 @@ export default function Home() {
         <div className="fakeimg" style={{ height: 100 }}>
           Image
         </div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <p>I code.</p>
       </div>
       <div className="card">
         <h3>Popular Post</h3>
@@ -61,13 +47,13 @@ export default function Home() {
         <div className="fakeimg">Image</div>
       </div>
       <div className="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
+        <h3>Subscribe</h3>
+        <p>youtube</p>
       </div>
     </div>
   </div>
   <div className="footer">
-    <h2>Footer</h2>
+    <h2>Copyright 2024 nitinseelan</h2>
   </div>
 
     </div>

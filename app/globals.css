@@ -89,7 +89,7 @@ cursor: pointer;
 .column {
   float: left;
   width: 100%;
-  background-color: rgb(24,24,27);
+  background-color: rgb(195,195,197);
   height:900px;
   box-shadow: 0 4px 8px 0 rgba(72, 66, 66, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  color: #f2f2f2;
@@ -345,19 +345,59 @@ margin-top: 10px;
   border-color: black;
 }
 
-table, th, td {
+table{
 margin-top: 10px;
  border: 1px solid black;
- background: tomato;
- margin-right: 10px;
- margin-left: 10px;
+ background: rgb(248, 248, 248);
  border-spacing: 0px;
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- border-radius: 5px;
+ border-radius: 10px;
 
 }
 
 
+td {
+  margin-top: 10px;
+   border: 1px solid black;
+   background: rgb(248, 248, 248);
+   border-spacing: 0px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+
+  th {
+    margin-top: 10px;
+     border: 1px solid black;
+     background: rgb(201, 198, 198);
+     border-spacing: 0px;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+  
+    .btntd {
+      margin-top: 10px;
+      border: 1px solid black;
+      background: rgb(248, 248, 248);
+      border-spacing: 0px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 70px;
+
+
+    }
+
+    .btntd:hover {
+      cursor: pointer;
+    }
+    .tf {
+      margin-top: 10px;
+       border: 1px solid black;
+       background: rgb(248, 248, 248);
+       border-spacing: 0px;
+       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      }
 .container{
   display: inline-block;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -382,15 +422,11 @@ margin-top: 10px;
 
 
 .username {
-border-top-left-radius: 10px;
-border-top-right-radius:10px;
 width: 40%;
-height: 3.29412rem;
 background-color: white;
-border-right:2px solid black ;
-border-left:2px solid black ;
-border-bottom: 1px solid black;
-border-top: 2px solid black;
+border: 2px solid black;
+border-radius: 10px;
+height: 3.21rem;
 }
 
 .username[type=text]:focus {
@@ -400,14 +436,11 @@ border-top: 2px solid black;
 
 
 .password {
-  width: 29.88%;
+  width: 29.5%;
   height: 3.21rem;
   background-color: white;
-border-left:2px solid black ;
-border-bottom: 2px solid black;
-border-top: 1px solid black;
-border-right: 0px solid black;
-border-bottom-left-radius: 10px;
+  border: 2px solid black;
+border-radius: 10px;
 }
 
 
@@ -416,7 +449,15 @@ border-bottom-left-radius: 10px;
 
 }
 .signUpDiv {
+  height: 200px;
   text-align: center;
+  background-color: #007aff;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10px ;
+  margin-bottom: 25% ;
+  border-radius: 10px;
 
 }
 
@@ -428,13 +469,11 @@ border-bottom-left-radius: 10px;
 .submit{
   background-color: white;
   border: solid black;
-border-bottom-right-radius: 10px;
+  margin: 2px;
+  height: 3.5rem;
+border-radius: 10px;
 width: 10.12%;
-height: 3.5rem;
-border-left:0px solid black ;
-border-bottom: 2px solid black;
-border-top: 1px solid black;
-border-right: 2px solid black;
+border: 2px solid black;
 }
 
 .submit:hover {
@@ -492,3 +531,214 @@ border-right: 2px solid black;
   font-size: 300px;
   text-align: center;
 }
+
+.bx3 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+tr {
+  height: 70px;
+}
+
+
+.tdlink {
+  text-align:left ;
+  margin-left: 20px;
+  justify-content: left;
+  color: #969696;
+  font-size: large;
+  
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* General Page Styling */
+.modules-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f900;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Module Containers */
+.module {
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Module Header */
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0073e6; /* Canvas blue */
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+}
+
+.module-header:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* Module Content */
+.module-content {
+  padding: 16px;
+  border-top: 1px solid #ddd;
+}
+
+.module-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.module-item {
+  margin-bottom: 8px;
+}
+
+.module-link {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.module-link:hover {
+  text-decoration: underline;
+  color: #005bb5;
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  display: flex;  /* Use flexbox to align the video and document side by side */
+  gap: 20px;  /* Space between video and document */
+  justify-content: center;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.video-container, .document-container {
+  flex: 1;  /* Ensure both containers share equal width */
+  max-width: 800px;  /* Limit width to 800px */
+}
+
+.div2 {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.div2:hover {
+  transform: scale(1.05);
+}
+
+h1, h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.modulesContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.pageTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.moduleList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.module {
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.moduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0073e6;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+}
+
+.moduleHeader:hover {
+  background-color: #005bb5;
+}
+
+.toggleText {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.lessonList {
+  padding: 16px;
+  border-top: 1px solid #ddd;
+}
+
+.lessonItem {
+  margin-bottom: 8px;
+}
+
+.lessonLink {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.lessonLink:hover {
+  text-decoration: underline;
+  color: #005bb5;
+}
+
+
