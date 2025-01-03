@@ -60,6 +60,8 @@ export default function Home() {
       <div className="column5">
         <div className="btn77">
           <MyLink link="/airplanes" imgsrc3={"/a380.png"} />
+          <MyLink link="/airplanes" imgsrc3={"/a320.png"} />
+
         </div>
       </div>
 
