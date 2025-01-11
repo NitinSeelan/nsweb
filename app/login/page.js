@@ -33,6 +33,7 @@ export default function Home() {
     }
     
     return(
+        <div className="signupPage">
         <div className="signUpDiv">
         <div className="signup">            
                 <h1>Login for nitinseelan.com</h1>
@@ -45,6 +46,7 @@ export default function Home() {
                 </form>
             </div>
         </div>  
+        </div>
     );
 
 

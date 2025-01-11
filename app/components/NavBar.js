@@ -13,11 +13,23 @@ const NavBar = () => {
             <a href="/posts">Posts</a>
             <a href="/python">Python</a>
             <a href="/counter">Counter</a>
-            <a href="/comingsoon">Airplanes</a>
             {isLoggedIn ? (
                 <React.Fragment>
-                    <a href="/signup">Profile</a>
-                    <a href="/login">Logout</a>
+                    <a href="/airplanes">Airplanes</a>
+                    <div className='logbar'>
+                      <a href="/profile">😀</a>
+                    <a href="/login">
+                    <button 
+                className="logoutButton" 
+                onClick={() => {
+                    AuthService.logout();
+                    router.push("/"); // Redirect to login page after logout
+                }}
+            >
+                Logout
+            </button>
+                    </a>
+                    </div>
                 </React.Fragment>
             ) : (
                 <React.Fragment>

@@ -1,12 +1,18 @@
-export default function authHeader(){
-    const userStr = localStorage.getItem("user")
-    let user = null
-    if(userStr) {
-        user = JSON.parse(userStr)
-    }
-    if (user && user.accessToken) {
-        return { 'x-access-token': user.accessToken}
-    }else {
-        return {Authorization: ""}
+export default function authHeader() {
+    try {
+        // Retrieve user data from localStorage
+        const userStr = localStorage.getItem("user");
+        const user = userStr ? JSON.parse(userStr) : null;
+
+        if (user && user.accessToken) {
+            // Return the x-access-token if a valid token exists
+            return { 'x-access-token': user.accessToken };
+        }
+
+        // Return an empty Authorization header if no token found
+        return { Authorization: "" };
+    } catch (error) {
+        console.error("Error in authHeader:", error); // Log any errors
+        return { Authorization: "" }; // Return a fallback header
     }
 }

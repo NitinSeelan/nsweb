@@ -21,8 +21,7 @@ export default function Home() {
         <h2>Why the Electoral College Should Be Removed</h2>
         <h5>Sunday, Dec 8, 2024</h5>
         <div className="fakeimg" style={{ height: 200 }}>
-          Image
-        </div>
+image        </div>
         <p>
         The Electoral College is the U.S.s system for the presidential election. Each state gets a number out of 538 votes based on its population and the candidate who gets 270 votes or more, wins.
         </p>
@@ -31,7 +30,7 @@ export default function Home() {
       </div>
     </div>
     <div className="rightcolumn">
-      <div className="card">
+     0 <div className="card">
         <h2>About Me</h2>
         <div className="fakeimg" style={{ height: 100 }}>
           Image

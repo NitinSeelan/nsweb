@@ -3,8 +3,18 @@ import Image from "next/image";
 import styles from "../globals.css";
 import MyLink from "../components/MyLink"; 
 import AuthService from "../services/auth.service";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+    const user = AuthService.getCurrentUser()
+    const isLoggedIn = (user == null) ? false : true;
+    const router = useRouter();
+
+    if (isLoggedIn){
+        console.log("is logged in. redirecting");
+        router.push("/")
+        return (<div></div>)
+    }
 
     //some function to send our request:
     var handleSubmit = (event) => {
@@ -22,18 +32,22 @@ export default function Home() {
     }
     
     return(
-        <div className="signUpDiv">
-           <div className="signup">            
-            <h1>SignUp for nitinseelan.com</h1>
+        <div className="signupPage">
+            <div className="signUpDiv">
+            <div className="signup">            
+                <h1>SignUp</h1>
 
-            <form onSubmit={handleSubmit}>
-            <input className="username" name="username" type="text" placeholder="Username"></input>
-            <br/>
-            <input className = "password" name="password" type="password" placeholder="Password"></input>
-            <input className="submit" type="submit" value="➡️"></input>
-            </form>
-        </div>
-</div>  
+                <form onSubmit={handleSubmit}>
+                <input className="username" name="username" type="text" placeholder="Username"></input>
+                <br/>
+                <input className = "password" name="password" type="password" placeholder="Password"></input>
+                <br/>
+
+                <input className="submit" type="submit" value="SignUp"></input>
+                </form>
+            </div>
+        </div>  
+    </div>
 
 
 
