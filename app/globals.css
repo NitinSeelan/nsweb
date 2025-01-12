@@ -39,7 +39,7 @@ cursor: pointer;
 .topnav {
   width: 100%; /* Full width */
   height: 60px; /* Fixed height */
-  background: linear-gradient(180deg, #1c1c1e, #2c2c2e); /* Subtle gradient */
+  background: linear-gradient(180deg, #56565d, #2c2c2e); /* Subtle gradient */
   top: 0;
   left: 0;
   z-index: 1000; /* Ensure it stays on top */
@@ -932,4 +932,49 @@ h1, h2 {
 
 .logoutButton:hover {
   background-color: #cc0000;
+}
+
+
+
+.notfounddiv {
+  background-color: black;
+  color: white; /* Ensures the text is readable */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Makes it cover the entire viewport */
+  margin: 0;
+}
+
+.hello {
+  color: white;
+  text-decoration: underline;
+}
+
+
+.nfh1 {
+  color: white;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  border-radius: 10px;
 }

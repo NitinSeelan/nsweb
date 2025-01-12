@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import AuthService from "../services/auth.service";
+import Image from 'next/image';
 
 const NavBar = () => {
     const user = AuthService.getCurrentUser()
@@ -17,7 +18,13 @@ const NavBar = () => {
                 <React.Fragment>
                     <a href="/airplanes">Airplanes</a>
                     <div className='logbar'>
-                      <a href="/profile">😀</a>
+                      <a href="/profile"> <Image 
+        src="/logo3.png" 
+        alt="Logo" 
+        width={25} 
+        height={25} 
+        priority 
+      /></a>
                     <a href="/login">
                     <button 
                 className="logoutButton" 

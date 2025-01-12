@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../globals.css";
 import MyLink from "../components/MyLink";
 
+
 export default function Home() {
   return (
     <div className="mainDiv2">
@@ -9,7 +10,7 @@ export default function Home() {
   <style
     dangerouslySetInnerHTML={{
       __html:
-        '\n* {\n  box-sizing: border-box;\n}\n\n/* Add a gray background color with some padding */\nbody {\n  font-family: Arial;\n  background: #f1f1f1;\n}\n\n/* Header/Blog Title */\n.header {\n  padding: 30px;\n  font-size: 40px;\n  text-align: center;\n  background: white;\n}\n\n/* Create two unequal columns that floats next to each other */\n/* Left column */\n.leftcolumn {   \n  float: left;\n  width: 75%;\n}\n\n/* Right column */\n.rightcolumn {\n  float: left;\n  width: 25%;\n  padding-left: 20px;\n}\n\n/* Fake image */\n.fakeimg {\n  background-color: #aaa;\n  width: 100%;\n  padding: 20px;\n}\n\n/* Add a card effect for articles */\n.card {\n   background-color: white;\n   padding: 20px;\n   margin-top: 20px;\n}\n\n/* Clear floats after the columns */\n.row:after {\n  content: "";\n  display: table;\n  clear: both;\n}\n\n/* Footer */\n.footer {\n  padding: 20px;\n  text-align: center;\n  background: #ddd;\n  margin-top: 20px;\n}\n\n/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */\n@media screen and (max-width: 800px) {\n  .leftcolumn, .rightcolumn {   \n    width: 100%;\n    padding: 0;\n  }\n}\n'
+        '\n* {\n  box-sizing: border-box;\n}\n\n/* Add a gray background color with some padding */\nbody {\n  font-family: Arial;\n  background: #f1f1f1;\n}\n\n/* Header/Blog Title */\n.header {\n  padding: 30px;\n  font-size: 40px;\n  text-align: center;\n  background: white;\n}\n\n/* Create two unequal columns that floats next to each other */\n/* Left column */\n.leftcolumn { \n margin-left: 5%;  \n  float: left;\n  width: 65%;\n}\n\n/* Right column */\n.rightcolumn {\n margin-right: 5%;\n  float: left;\n  width: 25%;\n  padding-left: 20px;\n}\n\n/* Fake image */\n.fakeimg2 {\n background-image: url("/cloud.jpeg");\n border-radius: 10px;\n  background-color: #aaa;\n  width: 100%;\n  padding: 20px;\n}\n\n  Fake image */\n.fakeimg {\n border-radius: 10px;\n  background-color: #aaa;\n  width: 100%;\n  padding: 20px;\n}\n\n/* Add a card effect for articles */\n.card {\n  border-radius: 10px;\n background-color: white;\n   padding: 20px;\n   margin-top: 20px;\n}\n\n/* Clear floats after the columns */\n.row:after {\n  content: "";\n  display: table;\n  clear: both;\n}\n\n/* Footer */\n.footer {\n  padding: 20px;\n  text-align: center;\n  background: #ddd;\n  margin-top: 20px;\n}\n\n/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */\n@media screen and (max-width: 800px) {\n  .leftcolumn, .rightcolumn {   \n    width: 100%;\n    padding: 0;\n  }\n}\n'
     }}
   />
   <div className="header">
@@ -20,8 +21,9 @@ export default function Home() {
       <div className="card">
         <h2>Why the Electoral College Should Be Removed</h2>
         <h5>Sunday, Dec 8, 2024</h5>
-        <div className="fakeimg" style={{ height: 200 }}>
-image        </div>
+        <div className="fakeimg2" style={{ height: 200 }}>
+       
+        </div>
         <p>
         The Electoral College is the U.S.s system for the presidential election. Each state gets a number out of 538 votes based on its population and the candidate who gets 270 votes or more, wins.
         </p>
@@ -30,7 +32,7 @@ image        </div>
       </div>
     </div>
     <div className="rightcolumn">
-     0 <div className="card">
+      <div className="card">
         <h2>About Me</h2>
         <div className="fakeimg" style={{ height: 100 }}>
           Image
@@ -46,8 +48,17 @@ image        </div>
         <div className="fakeimg">Image</div>
       </div>
       <div className="card">
-        <h3>Subscribe</h3>
-        <p>youtube</p>
+        <h3></h3>
+        <p><>
+  {/* Add icon library */}
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  {/* Add font awesome icons */}
+  <a href="#" className="fa fa-youtube" />
+</>
+</p>
       </div>
     </div>
   </div>

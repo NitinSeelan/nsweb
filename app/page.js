@@ -45,16 +45,15 @@ export default function Home() {
       <div className="column3">
         <h2>My Other Sites and Channels</h2>
         <div className="btn34">
-          <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc2="2.png" />
+          <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc2="logo3.png" />
           <MyLink link="https://www.youtube.com/@nitinseelantech" imgsrc2="1.png" />
-          <MyLink link="https://www.youtube.com/@NitinSeelanBonus" imgsrc2="4.png" />
+          <MyLink link="https://www.youtube.com/@NitinSeelanBonus" imgsrc2="1.jpg" />
         </div>
       </div>
 
       <div className="column4">
         <h2>Tools</h2>
         <MyLink link="/counter" imgsrc2={"/Co.png"} />
-        <MyLink link="https://www.youtube.com/@nitinseelantech" text="Nitin Seelan Tech" />
       </div>
 
       <div className="column5">
@@ -72,7 +71,7 @@ export default function Home() {
       </div>
 
       <footer>
-        <h4>Copyright Nitin Seelan 2024</h4>
+        <h4>Copyright Nitin Seelan 2024-2025</h4>
       </footer>
     </div>
   );
