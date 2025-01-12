@@ -1,15 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    async redirects() {
+export default {
+    // Your Next.js configuration
+    redirects: async () => {
       return [
         {
-          source: '/signup', // The path you want to redirect
-          destination: 'https://signup.nitinseelan.com', // The target URL
-          permanent: true, // Set to true if this is a permanent redirect (301)
+          source: '/signup',
+          destination: 'https://signup.nitinseelan.com',
+          permanent: true,
         },
       ];
     },
   };
-  
-  module.exports = nextConfig;
   
