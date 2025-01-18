@@ -4,6 +4,10 @@ import Image from "next/image";
 import styles from "../globals.css"; // Global styles import
 import MyLink from "../components/MyLink"; 
 import Link from "next/link"; // Import Link from Next.js for client-side navigation
+import { useRouter } from "next/navigation";
+import AuthService from "../services/auth.service";
+
+
 
 // Sample data for modules
 const modulesData = [
@@ -230,6 +234,21 @@ const ModulesPage = () => {
 };
 
 export default function Home() {
+  const router = useRouter();
+const [user, setUser] = useState(null);
+
+useEffect(() => {
+    const currentUser = AuthService.getCurrentUser();
+    if (!currentUser) {
+        router.push("/"); // Redirect to login page if not logged in
+    } else {
+        setUser(currentUser); // Set user information if logged in
+    }
+}, [router]);
+
+if (!user) {
+    return <div></div>; // Show a loading state while redirecting or fetching data
+}
   return (
     <div className="aircoursediv">
       {/* You can place an image or content here */}

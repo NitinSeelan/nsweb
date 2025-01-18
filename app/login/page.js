@@ -41,13 +41,13 @@ export default function Home() {
         <div className="signupPage">
         <div className="signUpDiv">
         <div className="signup">            
-                <h1>Login for nitinseelan.com</h1>
+                <h1>Login</h1>
 
                 <form onSubmit={handleSubmit}>
                 <input className="username" name="username" type="text" placeholder="Username"></input>
                 <br/>
                 <input className = "password" name="password" type="password" placeholder="Password"></input>
-                <input className="submit" type="submit" value="➡️"></input>
+                <input className="submit" type="submit" value="Login"></input>
                 </form>
             </div>
         </div>  

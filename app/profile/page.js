@@ -25,8 +25,16 @@ export default function Profile() {
             <h1>Welcome, {user.username}!</h1>
             <div className="profileDetails">
                 <p><strong>Username:</strong> {user.username}</p>
+            
             </div>
-           
+                <button className="logoutButton" 
+                    onClick={() => {
+                        AuthService.logout();
+                        router.push("/"); // Redirect to login page after logout
+                        window.location.reload();
+                    }}>
+                    Logout
+            </button>
         </div>
     );
 }
