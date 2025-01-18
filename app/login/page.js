@@ -28,8 +28,13 @@ export default function Home() {
             return;
         }
 
-        AuthService.login(username, password)
-        console.log("worked")
+        AuthService.login(username, password).then(
+            () => {
+                console.log("worked")
+                window.location.reload();
+            }
+        )
+        
     }
     
     return(

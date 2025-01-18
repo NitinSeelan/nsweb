@@ -69,6 +69,7 @@ class AuthService {
 
     // Get current user from localStorage
     getCurrentUser() {
+        
         const userStr = localStorage.getItem("user");
         if (userStr) {
             try {

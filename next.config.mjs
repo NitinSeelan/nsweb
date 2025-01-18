@@ -3,11 +3,11 @@ export default {
     redirects: async () => {
       return [
         {
-          source: '/signup',
+          source: '/bruh',
           destination: 'https://signup.nitinseelan.com',
           permanent: true,
         },
       ];
-    },
+    }, 
   };
   

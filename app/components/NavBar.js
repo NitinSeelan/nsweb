@@ -1,11 +1,13 @@
 'use client'
 import React from 'react';
 import AuthService from "../services/auth.service";
+import { useRouter } from "next/navigation";
 import Image from 'next/image';
 
 const NavBar = () => {
     const user = AuthService.getCurrentUser()
     const isLoggedIn = (user == null) ? false : true
+    const router = useRouter();
     console.log(user)
 
     return(
@@ -18,24 +20,21 @@ const NavBar = () => {
                 <React.Fragment>
                     <a href="/airplanes">Airplanes</a>
                     <div className='logbar'>
-                      <a href="/profile"> <Image 
-        src="/logo3.png" 
-        alt="Logo" 
-        width={25} 
-        height={25} 
-        priority 
-      /></a>
-                    <a href="/login">
-                    <button 
-                className="logoutButton" 
-                onClick={() => {
-                    AuthService.logout();
-                    router.push("/"); // Redirect to login page after logout
-                }}
-            >
-                Logout
-            </button>
-                    </a>
+                    <a href="/profile"> <Image 
+                        src="/logo3.png" 
+                        alt="Logo" 
+                        width={25} 
+                        height={25} 
+                        priority 
+                    /></a>
+                    <button className="logoutButton" 
+                        onClick={() => {
+                            AuthService.logout();
+                            router.push("/"); // Redirect to login page after logout
+                            window.location.reload();
+                        }}>
+                        Logout
+                    </button>
                     </div>
                 </React.Fragment>
             ) : (
