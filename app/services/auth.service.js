@@ -17,7 +17,9 @@ class AuthService {
             .then((response) => {
                 console.log("Login successful:", response.data);
                 if (response.data.accessToken) {
-                    localStorage.setItem("user", JSON.stringify(response.data));
+                    if(typeof window !== 'undefined'){
+                        localStorage.setItem("user", JSON.stringify(response.data));
+                    }
                 }
                 return response.data;
             })
@@ -37,7 +39,9 @@ class AuthService {
     // Logout method
     logout() {
         console.log("Logging out...");
-        localStorage.removeItem("user");
+        if(typeof window !== 'undefined'){
+            localStorage.removeItem("user");
+        }
     }
 
     // Register method
@@ -70,7 +74,7 @@ class AuthService {
     // Get current user from localStorage
     getCurrentUser() {
         
-        const userStr = localStorage.getItem("user");
+        const userStr = typeof window !== 'undefined' ? localStorage.getItem("user") : null;
         if (userStr) {
             try {
                 const user = JSON.parse(userStr);

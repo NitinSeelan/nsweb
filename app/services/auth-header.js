@@ -1,7 +1,10 @@
 export default function authHeader() {
     try {
         // Retrieve user data from localStorage
-        const userStr = localStorage.getItem("user");
+        let userStr;
+        if (typeof window !== 'undefined'){
+            userStr = localStorage.getItem("user");
+        }
         const user = userStr ? JSON.parse(userStr) : null;
 
         if (user && user.accessToken) {
