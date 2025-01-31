@@ -1,3 +1,4 @@
+'use client'
 export default function authHeader() {
     try {
         // Retrieve user data from localStorage
