@@ -1,11 +1,25 @@
-import Image from "next/image";
-import styles from "../globals.css";
-import MyLink from "../components/MyLink"; 
+// pages/index.js
+'use client'
+import React from 'react';
+import Link from 'next/link';
 
-export default function Home() {
-    return(
-        <div className="uhdiv">
+const HomePage = () => {
+  return (
+    <div>
+    
+  <div className="sidenav">
+    <a href="/queen">Queen</a>
+    <a href="/rhcp">RHCP</a>
+    <a href="/hits">Hits</a>
+  </div>
+  {/* Page content */}
+  <div className="main"></div>
 
-</div>
-    );
-}
+
+  
+
+    </div>
+  );
+};
+
+export default HomePage;

@@ -8,17 +8,15 @@ const NavBar = () => {
     const user = AuthService.getCurrentUser()
     const isLoggedIn = (user == null) ? false : true
     const router = useRouter();
-    console.log(user)
 
     return(
         <div className = "topnav">
-            <a href="/"> <img src="./logo3.png" alt="" height = "25px" width = "25px" /></a>
+            <a href="/"> <img src="../favicon.ico" alt="" height = "25px" width = "25px" /></a>
             <a href="/posts">Posts</a>
             <a href="/python">Python</a>
             <a href="/counter">Counter</a>
             {isLoggedIn ? (
                 <React.Fragment>
-                    <a href="/airplanes">Airplanes</a>
                     <div className='logbar'>
                     <a href="/profile"> <Image 
                         src="/logo3.png" 

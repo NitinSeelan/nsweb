@@ -30,6 +30,7 @@ export default function Home() {
   };
   return (
     <div className="bx">
+      <h1>Counter</h1>
           <div className="numdiv"id="number">{count}</div>
           {/* Button to decrease the count */}
        {/* Button to increase the count */}

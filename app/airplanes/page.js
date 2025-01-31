@@ -1,10 +1,12 @@
-import Image from "next/image";
-import styles from "../globals.css";
-import MyLink from "../components/MyLink";
- 
-export default function Home() {
-  return (
-    <div className="ec2">
-    </div>
+'use client';
+
+import MyLink from "app/components/MyLink";
+
+export default function Airplanes() {
+return(
+<div>
+  <MyLink link="/airplanes" imgsrc3={"/boeing.png"} />
+<MyLink link="/airplanes" imgsrc3={"/airbus.png"} />
+</div>
   );
-}
+};

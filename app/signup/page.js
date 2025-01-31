@@ -11,8 +11,7 @@ export default function Home() {
     const router = useRouter();
 
     if (isLoggedIn){
-        console.log("is logged in. redirecting");
-        router.push("/")
+            router.push("/")
         return (<div></div>)
     }
 
@@ -21,14 +20,16 @@ export default function Home() {
         event.preventDefault();
         const username = event.target.username.value
         const password = event.target.password.value
-        console.log(username);
-        console.log(password);
         if (username === '' || password === '') {
             return;
         }
-
-        AuthService.register(username, password)
-        console.log("worked")
+        AuthService.register(username, password).then(
+                    () => {
+                                AuthService.login(username, password).then(
+                                    () => {
+                                        window.location.reload();}
+        )}
+                )
     }
     
     return(
