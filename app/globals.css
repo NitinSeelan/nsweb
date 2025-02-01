@@ -53,7 +53,6 @@ body {
 }
 
 .topnav {
-  width: 100%; /* Full width */
   height: 60px; /* Fixed height */
   background: linear-gradient(180deg, #56565d, #2c2c2e); /* Subtle gradient */
   top: 0;
@@ -68,6 +67,7 @@ body {
   position: sticky;
   margin-bottom: 0; /* Remove any extra spacing below */
   padding-bottom: 0; /* Ensure no extra padding */
+
 }
 .topnav a {
   color: rgba(245, 245, 247, 0.9); /* Soft off-white */
