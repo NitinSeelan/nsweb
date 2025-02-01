@@ -3,36 +3,14 @@
 import Image from "next/image";
 import styles from "./globals.css";
 import MyLink from "./components/MyLink";
-import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    const column5 = document.querySelector(".column5");
-    const plane = document.querySelector(".fly-plane");
-  
-    if (!column5 || !plane) return; // Exit if either element doesn't exist
-  
-    const handleScroll = () => {
-      const rect = column5.getBoundingClientRect();
-      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-        plane.classList.add("fly-animation");
-      } else {
-        plane.classList.remove("fly-animation");
-      }
-    };
-  
-    window.addEventListener("scroll", handleScroll);
-  
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-  
   return (
     <div className="mainDiv">
       <title>Nitin Seelan | Home</title>
-
+      <div className="columnwrap">
       <div className="column">
+      <br/>
       <h1
           className="typed"
           style={{
@@ -51,6 +29,8 @@ export default function Home() {
         <p>I code in Swift, Python, and React(JavaScript, HTML, and CSS)</p>
         <MyLink link="https://www.youtube.com/@nitinseelan" imgsrc2={"/nsfull.webp"} />
       </div>
+      </div>
+      <div className="columnwrap">
 
       <div className="column2">
         <h2>Coding</h2>
@@ -71,6 +51,8 @@ export default function Home() {
           ></iframe>
         </div>
       </div>
+</div>
+<div className="columnwrap">
 
       <div className="column3">
   <h2>My Other Sites and Channels</h2>
@@ -102,14 +84,16 @@ export default function Home() {
 
   </div>
 </div>
+</div>
 
-
-
+<div className="columnwrap">
       <div className="column4">
         <h2>Tools</h2>
         <MyLink link="/counter" imgsrc2={"/Co.png"} />
       </div>
 
+      </div>
+      <div className="columnwrap">
       <div className="column5">
         <div className="btn77">
           {/* Apply the fly-plane class to the A380 image */}
@@ -117,14 +101,18 @@ export default function Home() {
           <MyLink link="/airplanes" imgsrc3={"/a320.png"} />
         </div>
       </div>
+</div>
+<div className="columnwrap">
 
       <div className="column6">
         <h2>Other Accounts</h2>
         <MyLink link="https://replit.com/@nitin26" text="Replit" />
+        <br/>
         <MyLink link="mailto:nitins.seelan@gmail.com" text="Email" />
       </div>
+</div>
 
-      <footer>
+<footer className="footer">
         <h4>Copyright Nitin Seelan 2024-2025</h4>
       </footer>
     </div>

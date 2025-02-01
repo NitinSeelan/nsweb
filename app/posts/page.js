@@ -22,32 +22,52 @@ export default function Home() {
             borderRadius: "10px",
           }}
         >
-          Nitin Seelan Posts
-        </h1>  </div>
+Popular        </h1>  
+</div>
         <div className="card">
-        <h3>Popular Posts</h3>
+        <br/>
+    <br/>
+
         <div className="btn34" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', margin: '10px', marginBottom: '10px'}}>
 
-        <div style={{ textAlign: 'center', marginRight: '20px', background: 'gray'}}>
-      <p>Main Channel</p>
+        <div style={{ textAlign: 'center', marginRight: '20px', background: 'black', borderRadius: '30px', color:"white"}}>
+      <p>Production Studio Channel</p>
     </div>
 
     {/* Second MyLink with description */}
-    <div style={{ textAlign: 'center', marginRight: '20px', background: 'gray'}}>
+    <div style={{ textAlign: 'center', marginRight: '20px', background: 'black', borderRadius: '30px', color:"white"}}>
     <p>Production Studio Channel</p>
 
     </div>
 
     {/* Third MyLink with description */}
-    <div style={{ textAlign: 'center', marginRight: '20px', background: 'gray'}}>
+    <div style={{ textAlign: 'center', marginRight: '20px', background: 'black', borderRadius: '30px', color:"white"}}>
       <p>Production Studio Channel</p>
     </div>
-
-        
         </div>
+        <br/>
+    <br/>
+  
+
+         <br/>
       </div>
+      
   <div className="row">
-      <div className="card">
+  <h1
+          className="typewd"
+          style={{
+            fontSize: "48px",
+            fontWeight: "700",
+            color: "#000000", // Black text
+            textAlign: "center",
+            textShadow: "0px 0px 10px #ffffff, 0px 0px 20px #ffffff", // White glow
+            fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+            marginBottom: "20px",
+            borderRadius: "10px",
+          }}
+        >
+        Recent
+        </h1>      <div className="card">
         <h2>Why the Electoral College Should Be Removed</h2>
         <h5>Sunday, Dec 8, 2024</h5>
         <div className="fakeimg2">

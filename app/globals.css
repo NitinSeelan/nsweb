@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -13,9 +15,9 @@ a{
   text-decoration: none;
 }
 .mainDiv{
-  width: 100%;
   text-align: center;
-  background-color: rgb(195,195,197);
+  background-color: white;
+  margin: 10px;
 
 }
 .mainDiv2{
@@ -38,6 +40,18 @@ cursor: pointer;
 
 
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Default font */
+  margin: 0;
+  padding: 0;
+}
+
 .topnav {
   width: 100%; /* Full width */
   height: 60px; /* Fixed height */
@@ -50,9 +64,10 @@ cursor: pointer;
   justify-content: space-between; /* Spread items across the navbar */
   padding: 0 20px; /* Add padding to prevent content from touching the screen edges */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
   box-sizing: border-box; /* Ensure padding is included in width calculations */
   position: sticky;
+  margin-bottom: 0; /* Remove any extra spacing below */
+  padding-bottom: 0; /* Ensure no extra padding */
 }
 .topnav a {
   color: rgba(245, 245, 247, 0.9); /* Soft off-white */
@@ -86,66 +101,60 @@ cursor: pointer;
 }
 
 
-
+.columnwrap {
+  background-color: white;
+padding-bottom: 10px;}
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
   width: 100%;
   background-color: rgb(195,195,197);
   height:900px;
-  box-shadow: 0 4px 8px 0 rgba(72, 66, 66, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  color: #f2f2f2;
- margin-bottom: 10px;
+ padding: 10px;
+ 
 }
 .column2 {
-  float: left;
+  padding: 10px;
+
   width: 100%;
   background-color: #06c;
   height:900px;
-  box-shadow: 0 4px 8px 0 rgba(72, 66, 66, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  color: #f2f2f2;
- margin-bottom: 10px;
 }
 .column3 {
-  float: left;
+  padding: 10px;
+
   width: 100%;
   background-color: rgb(182, 219, 236);
   height:900px;
-  box-shadow: 0 4px 8px 0 rgba(72, 66, 66, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  color: #000000;
- margin-bottom: 10px;
 
 }
 .column4 {
-  float: left;
+  padding: 10px;
+
   width: 100%;
   background-color: rgb(0, 0, 0);
   height:900px;
-  box-shadow: 0 4px 8px 0 rgba(72, 66, 66, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  color: #f2f2f2;
- margin-bottom: 10px;
 
 }
 .column5 {
-  float: left;
+  padding: 10px;
   width: 100%;
   background-color: rgb(245, 245, 247);;
   height:900px;
-  box-shadow: 0 4px 8px 0 rgba(72, 66, 66, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  color: #000000;
- margin-bottom: 10px;
  background-image: url('/cloud.jpeg');
 
 
 }
 .column6 {
-  float: left;
+  padding: 10px;
   width: 100%;
-  background-color: rgb(245, 245, 247);;
+  background-color: rgb(25, 177, 191);;
   height:900px;
-  box-shadow: 0 4px 8px 0 rgba(72, 66, 66, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  color: #000000;
- margin-bottom: 10px;
 
 }
 
@@ -1314,11 +1323,42 @@ h1, h2 {
 .card {
   background-color: white;
   color: #000000;
-  border-radius: 25px;
+  border-radius: 30px;
   margin: 60px;
+  padding:10px;
+  text-align: center;
 }
 
 .wright {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.mb-3 {
+  text-align: center;
+}
+.mb-4 {
+  text-align: center;
+}
+
+.text-success mtb-1 {
+  text-align: center;
+}
+
+.container mt-5 ml-5 {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.space {
+  background-color: white;
+}
+
+.footer {
+  background-color: white;
+}
+
